@@ -9,12 +9,9 @@ navbar:
       href: Resume.html
     - text: "Ploty Code"
       href: Ploty.html
-    - icon: "Email to me"
+    - icon: Annie-envelope
       href: mailto:<xy2404@cumc.columbia.edu>
-    - icon: "Google"
-      href: http://www.google.com
-    - icon: "dashboard"
-      href: dashboard.html
+
 output:
   html_document:
     theme: flatly
