@@ -1,0 +1,93 @@
+---
+title: "Resume"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Annie Yu
+######Email: xy2404@cumc.columbia.edu
+
+###EDUCATION:
+
+#####Columbia University                                     MS in Biostatistic             Aug 2017-May.2020
+
+#####University of California at Irvine                      BS in Biological Science       Sep.2014-Sep.2017
+
+#####International Undergraduate Preparation Program, UCI    Sep.2014-Sep.2017              Mar.2013-Mar.2014
+
+###RESEARCH EXPERIENCE:
+
+####Aquatic Ecosystems Testing, San Joaquin Marsh Reserve                                   Jul.2017-Aug.2017
+
+Examined the Ponds of Marsh Reserve, tested its chemical components
+
+Recorded Dissolved Oxygen, Productivity and Respiration levels of the ecosystem
+
+Performed analysis on the short term autotrophy and heterotrophy changes in different depth of Marsh
+
+####M118L Lab, UCI                                                                          Jul.2017-Aug.2017
+
+Completed antibiotic sensitivity investigation on a strain of micro-organism isolated from soil
+
+Conducted E. coli bacterial evolution investigation under glucose selective conditions
+
+###INTERNSHIP EXPERIENCE:
+
+####Shannxi Huamingputai Medical Equipment Company, Beijing, China                          Nov.2017 – May.2018
+
+Intern
+
+Tested algorithms using computer, reported the results to supervisor
+
+Collected data from all the testing equipment, filed data into different categories
+
+####Lab, Beijing University of Chinese Medicine, Beijing, China                             Jun.2017-Aug.2017
+
+#####Summer Intern (Distance Internship) Supervisor: Professor Li Sen
+
+Learned how to use some statistical software such as SPSS, Excel
+
+Performed analysis on the already gathered experimental data, and completed a report base on my analysis.
+
+Improved the analysis result by readjusting the health data according to different genders and ages
+
+####Zhonghua Drugstore, Shangqiu, Henan, China                                              Jul.2015 – Sept.2015 
+
+Assistant
+
+Learned the procedures of prescription drugs, worked with pharmaceutist to provide drugs for patients
+
+Studied some functions of OTC drugs, provided important consultation for patients with needs
+
+Checked and updated inventory of store on a weekly basis
+
+###ACTIVITIES:
+####Lab Assistant, Biology Department, UCI                                                  Mar.2016 – Mar.2017 
+
+Help freshmen students to complete chemical lab experiments
+
+Answered their questions about lab report and give instructions on how to write chemical lab report
+
+####Yield Assistant, Biology Department, UCI                                                Apr.2016 – Apr.2016
+
+Sent greeting letters before the arrival of the newly admitted student, including essential preparations for college
+life and more
+
+Welcomed international students and their parents, provided them guidance and answered various questions
+Translated English to Chinese for some Chinese parents, suggested local tourist spots
+
+####Member of Asian Pacific American Medical Student Association , UCI                      Sep.2014 – May.2015 
+
+Organized various activities such as weekly meeting, raised funds by beverage sales
+
+Participated various meetings, arranged activities and timetable during these meetings
+
+###SKILLS:
+
+Lab: Experimental design, Microbiological Techniques, Data analysis; Software: R studio, SPSS, SPS, Microsoft Office
+
+
+
+
