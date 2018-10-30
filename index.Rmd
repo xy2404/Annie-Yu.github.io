@@ -4,7 +4,7 @@ title: "Annie Yu"
 
 ### Annie's webpage
 
-I am an MS of biostatistic student, The expected graduation is 2020. My informaion show this website. 
+I am an MS of biostatistic student, The expected graduation is 2020. My informaion shows this website. 
 
 ### My pictures:
 
@@ -18,12 +18,12 @@ I have a cat, his name is Teemo...
 
 ### Add the links
 
-I like [to look for code on the internet](https://www.google.com).
-
 I can link directrly to my [resume](Resume.html).
 
-I want to add the [flashboard]()
+There is a link of my [plots](dashboard.html) 
 
-my code is [here](code.html)
+My ploty code is [here](ploty.html)
+
+I like [to look for code on the internet](https://www.google.com).
 
 

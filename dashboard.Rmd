@@ -1,0 +1,88 @@
+---
+title: "The ploty of NYNOAA"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+
+```{r setup, message=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(plotly)
+library(p8105.datasets)
+```
+
+
+
+```{r}
+set.seed(1)
+
+data(ny_noaa)
+nynoaa <- 
+  ny_noaa %>% 
+  janitor::clean_names() %>%
+  separate(date, into = c("Year", "Month", "Day"), sep = "-") %>% 
+  janitor::clean_names() 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ny_df_1 =
+  nynoaa %>% 
+  group_by(month,id) %>% 
+  mutate(tmax = as.numeric(tmax)) %>% 
+  mutate(tmin = as.numeric(tmin)) %>% 
+  na.omit() %>% 
+  summarise(mean_temp = mean(tmax)) %>% 
+  ungroup
+
+ny_df_1 %>% 
+plot_ly(x = ~month, y = ~mean_temp, type = "scatter", mode = "markers",
+          alpha = 0.5, 
+          color = ~mean_temp,
+          text = ~id)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+ny_df_2 =
+  nynoaa %>% 
+  group_by(year,id) %>% 
+  mutate(tmax = as.numeric(tmax)) %>% 
+  mutate(tmin = as.numeric(tmin)) %>% 
+  na.omit() %>% 
+  summarise(mean_temp = mean(tmax)) %>% 
+  ungroup
+
+ny_df_2 %>% 
+   plot_ly(x = ~year, y = ~mean_temp, color = ~year, type = "box")
+```
+
+### Chart C
+
+```{r}
+ny_df_3 <-nynoaa %>% 
+  group_by(year, month) %>% 
+  na.omit(tmax) %>% 
+  na.omit(tmin) %>% 
+  mutate(tmax_2 = as.numeric(tmax, na.rm = TRUE)) %>% 
+  mutate(tmin_2 = as.numeric(tmin, na.rm = TRUE)) %>%
+  ungroup %>% 
+  ggplot(aes(tmin_2,tmax_2))+
+  geom_hex(bins = 15)+
+  theme(legend.position = "bottom")
+
+ggplotly(ny_df_3)
+```
+
