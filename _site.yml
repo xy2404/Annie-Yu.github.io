@@ -1,4 +1,4 @@
-name: "Annie internet!"
+name: "Annie Internet!"
 output_dir: "."
 navbar:
   title: "Home"
@@ -7,9 +7,9 @@ navbar:
       href: http://github.com/xy2404/
     - text: "Resume"
       href: Resume.html
-    - text: "Ploty Code"
+    - text: "Plotly Code"
       href: Ploty.html
-    - icon: Annie-envelope
+    - icon: fa-envelope fa-lg
       href: mailto:<xy2404@cumc.columbia.edu>
 
 output:

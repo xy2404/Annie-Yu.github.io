@@ -1,5 +1,5 @@
 ---
-title: "The ploty of NYNOAA"
+title: "The plotly of NYNOAA"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -36,18 +36,19 @@ Column {data-width=650}
 ```{r}
 ny_df_1 =
   nynoaa %>% 
-  group_by(month,id) %>% 
+  group_by(year,id) %>% 
   mutate(tmax = as.numeric(tmax)) %>% 
   mutate(tmin = as.numeric(tmin)) %>% 
   na.omit() %>% 
-  summarise(mean_temp = mean(tmax)) %>% 
-  ungroup
+  summarise(mean_temp = mean(tmax/10)) %>% 
+  ungroup %>% 
+  ggplot(aes(x= year, y = mean_temp, fill = year))+
+  geom_boxplot()+
+  theme(legend.position = "bottom")+
+  ggtitle("The temperature change in every year")
 
-ny_df_1 %>% 
-plot_ly(x = ~month, y = ~mean_temp, type = "scatter", mode = "markers",
-          alpha = 0.5, 
-          color = ~mean_temp,
-          text = ~id)
+ggplotly(ny_df_1)
+  
 ```
 
 Column {data-width=350}
@@ -58,15 +59,19 @@ Column {data-width=350}
 ```{r}
 ny_df_2 =
   nynoaa %>% 
-  group_by(year,id) %>% 
+  group_by(month,id) %>% 
   mutate(tmax = as.numeric(tmax)) %>% 
   mutate(tmin = as.numeric(tmin)) %>% 
   na.omit() %>% 
-  summarise(mean_temp = mean(tmax)) %>% 
-  ungroup
-
-ny_df_2 %>% 
-   plot_ly(x = ~year, y = ~mean_temp, color = ~year, type = "box")
+  summarise(mean_temp = mean(tmax/10)) %>% 
+  ungroup %>% 
+  ggplot(aes(x=month, y=mean_temp, color=month))+
+  geom_point(alpha = 0.5)+
+  theme(legend.position = "bottom")+
+  ggtitle("The Temparature Change During a Year")
+  
+ggplotly(ny_df_2)
+  
 ```
 
 ### Chart C
@@ -81,8 +86,10 @@ ny_df_3 <-nynoaa %>%
   ungroup %>% 
   ggplot(aes(tmin_2,tmax_2))+
   geom_hex(bins = 15)+
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom")+
+  ggtitle("the maximum temperature VS the minimum temperature")
 
 ggplotly(ny_df_3)
 ```
+
 

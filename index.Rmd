@@ -16,13 +16,13 @@ I have a cat, his name is Teemo...
 
 <img src="/Users/annie/Desktop/data science/Homework/homework 4/Annie Yu/Teemo.png" style="width:75%">
 
-### Add the links
+### There are some links:
 
 I can link directrly to my [resume](Resume.html).
 
 There is a link of my [plots](dashboard.html) 
 
-My ploty code is [here](ploty.html)
+My plotly code and comments are [here](ploty.html)
 
 I like [to look for code on the internet](https://www.google.com).
 
