@@ -16,9 +16,11 @@ I have a cat, his name is Teemo...
 
 <img src="/Users/annie/Desktop/data science/Homework/homework 4/Annie Yu/Teemo.png" style="width:75%">
 
-### There are some links:
+###Resume:
 
-I can link directrly to my [resume](Resume.html).
+My [resume](Resume.html).
+
+### There are some links:
 
 There is a link of my [plots](dashboard.html) 
 
